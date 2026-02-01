@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/all.min.css">
+</head>
+<body>
+<div class="w-[450px] relative h-[1100px] mx-auto bg-white shadow-lg ">
+
+<!-- login secition start -->
+    <div class="w-full relative h-[1100px] mx-auto bg-white shadow-lg p-6  " id="divone">
+    <img src="img/Group 1.png" alt="img/Group 1.png" class="absolute top-[220px] left-[65px] ">
+
+
+    <div class="w-[402px] h-auto bg-white rounded-lg shadow-2xl mt-[300px] p-[30px] absolute top-[60px] left-6">
+       <p class="text-[18px] font-medium text-[#222222]">Mobile Number</p> 
+<input id="inputtwo" type="text" placeholder="Enter your mobile number" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+       <p class="text-[18px] font-medium text-[#222222]">4 Digit pin</p> 
+<input type="text" id="innputone" placeholder="Enter your mobile number" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+<button id="buttonone" class="w-full h-[50px] bg-blue-500 text-white rounded-lg mt-3">Login</button>
+<p id="errorone" class=" text-center text-[18px] font-medium rounded-lg mt-[20px] text-white py-3 bg-red-600 hidden ">Error: Something is missing</p>
+    </div>
+
+
+    </div>
+
+<!-- login secition end -->
+<!-- login secition end -->
+
+<div class="w-full h-auto bg-white hidden  p-6 " id="divtwo">
+<div class="flex justify-between border-b-2 border-gray-300 pb-6 ">
+<div class="flex">
+    <div class="">
+        <img src="img/Group.png" alt="img/Group.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]" id="addMoney">$45000</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Available Balance</p>
+    </div>
+</div>
+
+<button id="logOut" class="bg-white text-gray-500  px-[20px] text-[18px] font-medium border-2 border-gray-400  rounded-lg"><i class="fa-solid fa-arrow-right-from-bracket mr-[5px]"></i>Log Out</button>
+</div>
+
+<h3 class="text-[25px] font-bold text-[#222222] pt-[20px]">🔥 Welcome to Payooo!</h3>
+<p class="text-[16px] font-medium text-gray-400 pt-[10px]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+
+<div class="flex justify-between mt-4">
+    <button id="buttontwo" class="focus:text-blue-500 focus:bg-blue-700/10 focus:border-2 focus:border-blue-600 w-[123px] h-[90px] bg-white border-2 text-[16px] font-medium text-gray-500 border-gray-400 rounded-2xl ">
+            <img src="img/wallet 1.png" alt="img/wallet 1.png" class="mx-auto pt-2">
+           <p>Add Money</p>
+    
+    </button>
+    <button id="cashOutbutton" class="focus:text-blue-500 focus:bg-blue-700/10 focus:border-2 focus:border-blue-600 w-[123px] h-[90px] bg-white border-2 text-[16px] font-medium text-gray-500 border-gray-400 rounded-2xl ">
+        
+           <img src="img/send 1.png" alt="img/send 1.png" class="mx-auto pt-2">
+           <p>Cashout</p>
+           
+        
+    </button>
+    <button id="tranferButton" class="focus:text-blue-500 focus:bg-blue-700/10 focus:border-2 focus:border-blue-600 w-[123px] h-[90px] bg-white border-2 text-[16px] font-medium text-gray-500 border-gray-400 rounded-2xl ">
+       
+           <img src="img/money 1.png" alt="img/money 1.png" class="mx-auto pt-2">
+           <p>Transfer Money</p>
+           
+        
+    </button>
+
+</div>
+
+
+<div class="flex justify-between mt-4">
+    <button id="bonusbutton" class="focus:text-blue-500 focus:bg-blue-700/10 focus:border-2 focus:border-blue-600 w-[123px] h-[90px] bg-white border-2 text-[16px] font-medium text-gray-500 border-gray-400 rounded-2xl ">
+     
+           <img src="img/financial 1.png" alt="img/financial 1.png" class="mx-auto pt-2">
+           <p>Get Bonus</p>
+           
+        
+    </button>
+    <button id="payBillbutton" class="focus:text-blue-500 focus:bg-blue-700/10 focus:border-2 focus:border-blue-600 w-[123px] h-[90px] bg-white border-2 text-[16px] font-medium text-gray-500 border-gray-400 rounded-2xl ">
+      
+           <img src="img/purse 1.png" alt="img/purse 1.png" class="mx-auto pt-2">
+           <p>Pay Bill</p>
+           
+        
+    </button>
+    <button id="transactionsButton" class="focus:text-blue-500 focus:bg-blue-700/10 focus:border-2 focus:border-blue-600 w-[123px] h-[90px] bg-white border-2 text-[16px] font-medium text-gray-500 border-gray-400 rounded-2xl ">
+           <img src="img/transaction 1.png" alt="img/transaction 1.png" class="mx-auto pt-2">
+           <p>Transactions</p>
+    </button>
+
+</div>
+<!-- Latest Payment start -->
+
+
+<div class="mt-4 " id="latestPaymentdiv">
+   <div class="flex justify-between ">
+    <p class="text-[25px] font-bold text-[#222222] ">Latest Payment</p>
+    <button class="text-[16px] font-medium text-gray-500">View All</button>
+   </div>
+
+<div class="flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] p-[10px] mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Electricity Bill</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "><i class="fa-solid fa-ellipsis-vertical"></i></button>
+</div>
+<div class="flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] p-[10px] mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Bank Deposit</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "><i class="fa-solid fa-ellipsis-vertical"></i></button>
+</div>
+<div class="flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] p-[10px] mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Mobile Recharge</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "><i class="fa-solid fa-ellipsis-vertical"></i></button>
+</div>
+<div class="flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] p-[10px] mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Gas Bill</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "><i class="fa-solid fa-ellipsis-vertical"></i></button>
+</div>
+    
+</div>
+<!-- Latest Payment end -->
+
+<!-- add money section start -->
+ <div class="hidden" id="addMoneydiv">
+    <h1 class="text-[25px] font-bold text-[#222222] rounded-lg pt-[15px]">Add Money</h1>
+    <div class="w-full h-auto p-5 bg-white shadow-2xl mt-4">
+    <p class="text-[20px] text-gray-800 font-semibold ">Select A Bank</p>    
+<select name="" id="selector" class="w-full h-[50px] bg-[#F4F5F7] text-[#080808]/50 font-medium    border-none rounded-[50px] mt-3 p-3 text-lg focus:outline-none">
+    <option value="">Select Payment Method</option>
+    <option value="">Bkash</option>
+    <option value="">Nagad</option>
+    <option value="">Rocket</option>
+</select>
+<p class="text-[20px] text-gray-800 font-semibold ">Bank Account Number</p> 
+<input type="text" id="addMoneyinputone" placeholder="Enter 11 digit account number" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+
+<p class="text-[20px] text-gray-800 font-semibold ">Amount to Add</p> 
+<input type="text" id="addMoneyinputtwo" placeholder="Add Amount to withdraw" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+
+<p class="text-[20px] text-gray-800 font-semibold ">Pin Number</p> 
+<input type="text" id="addMoneyinputthree" placeholder="Enter 4 digit pin number" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+<button id="addbutton" class="w-full h-[50px] bg-blue-500 text-white rounded-lg mt-3">Add Money</button>
+<p id="errortwo" class=" text-center text-[18px] font-medium rounded-lg mt-[20px] text-white py-3 bg-red-600 hidden ">Error: Something is missing</p>
+    </div>
+ </div>
+<!-- add money section end -->
+<!-- cash out monery start -->
+
+<div class="hidden" id="cashOutdiv">
+    <h1 class="text-[25px] font-bold text-[#222222] rounded-lg pt-[15px]">Cash Out</h1>
+    <div class="w-full h-auto p-5 bg-white shadow-2xl mt-4">
+   
+
+<p class="text-[20px] text-gray-800 font-semibold ">Agent Number</p> 
+<input type="text" id="cashOutinputone" placeholder="Enter 11 digit number" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+
+<p class="text-[20px] text-gray-800 font-semibold ">Amount </p> 
+<input type="text" id="cashOutinputtwo" placeholder="Enter amount to withdraw" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+
+<p class="text-[20px] text-gray-800 font-semibold ">Pin Number</p> 
+<input type="text" id="cashOutinputthree" placeholder="Enter 4 digit pin number" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+<button id="cashWithdraw" class="w-full h-[50px] bg-blue-500 text-white rounded-lg mt-3">Withdraw Money</button>
+<p id="errorthree" class=" text-center text-[18px] font-medium rounded-lg mt-[20px] text-white py-3 bg-red-600 hidden ">Error: Something is missing</p>
+    </div>
+ </div>
+
+
+
+<!-- cash out monery end-->
+<!-- Transfer monery start-->
+
+<div class="hidden" id="tranferDiv">
+    <h1 class="text-[25px] font-bold text-[#222222] rounded-lg pt-[15px]">Transfer Money</h1>
+    <div class="w-full h-auto p-5 bg-white shadow-2xl mt-4">
+   
+
+<p class="text-[20px] text-gray-800 font-semibold ">User Account Number</p> 
+<input type="text" id="tranferInputone" placeholder="Enter 11 digit number" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+
+<p class="text-[20px] text-gray-800 font-semibold ">Amount</p> 
+<input type="text" id="tranferInputtwo" placeholder="Enter amount to withdraw" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+
+<p class="text-[20px] text-gray-800 font-semibold ">Pin Number</p> 
+<input type="text" id="tranferInputthree" placeholder="Enter 4 digit pin number" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+<button id="sendButton" class="w-full h-[50px] bg-blue-500 text-white rounded-lg mt-3">Send Now</button>
+<p id="errorfour" class=" text-center text-[18px] font-medium rounded-lg mt-[20px] text-white py-3 bg-red-600 hidden ">Error: Something is missing</p>
+    </div>
+ </div>
+
+
+<!-- Transfer monery end-->
+
+<!-- bunous div start -->
+
+<div class="hidden" id="bounsDiv">
+    <h1 class="text-[25px] font-bold text-[#222222] rounded-lg pt-[15px]">Get Bonus</h1>
+    <div class="w-full h-auto p-5 bg-white shadow-2xl mt-4">
+   
+
+<p class="text-[20px] text-gray-800 font-semibold ">Enter Bonus Coupon</p> 
+<input type="text" id="bonusInputone" placeholder="Enter your coupon" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+
+
+<button id="bonusButtontwo" class="w-full h-[50px] bg-blue-500 text-white rounded-lg mt-3">Get Bonus</button>
+<p id="errorfive" class=" text-center text-[18px] font-medium rounded-lg mt-[20px] text-white py-3 bg-red-600 hidden ">Error: Something is missing</p>
+    </div>
+ </div>
+<!-- bunous div start -->
+
+<!-- paybil div start -->
+
+<div class="hidden" id="payBildiv">
+    <h1 class="text-[25px] font-bold text-[#222222] rounded-lg pt-[15px]">Pay Bill</h1>
+    <div class="w-full h-auto p-5 bg-white shadow-2xl mt-4">
+    <p class="text-[20px] text-gray-800 font-semibold ">Select To Pay</p>    
+<select name="" id="selectorone" class="w-full h-[50px] bg-[#F4F5F7] text-[#080808]/50 font-medium    border-none rounded-[50px] mt-3 p-3 text-lg focus:outline-none">
+    <option value="">Select Payment Method</option>
+    <option value="">Bkash</option>
+    <option value="">Nagad</option>
+    <option value="">Rocket</option>
+</select>
+<p class="text-[20px] text-gray-800 font-semibold ">Biller Account Number</p> 
+<input type="text" id="payInputone" placeholder="Enter account number" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+
+<p class="text-[20px] text-gray-800 font-semibold ">Amount to Pay</p> 
+<input type="text" id="payInputtwo" placeholder="Add Amount to pay" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+
+<p class="text-[20px] text-gray-800 font-semibold ">Pin Number</p> 
+<input type="text" id="payInputthree" placeholder="Enter 4 digit pin number" class="w-full bg-[#F4F5F7] text-[#080808]/50  h-[50px]  font-medium rounded-[50px]  placeholder:text-gray-500 border-none   mt-3 pl-3 text-lg outline-none">
+<button id="paybuttonone" class="w-full h-[50px] bg-blue-500 text-white rounded-lg mt-3">Add Money</button>
+<p id="errorsix" class=" text-center text-[18px] font-medium rounded-lg mt-[20px] text-white py-3 bg-red-600 hidden ">Error: Something is missing</p>
+    </div>
+ </div>
+
+<!-- paybil div start -->
+<!-- paybil div start -->
+
+<div class="mt-4 hidden" id="transactionsDiv">
+   <div class="flex justify-between ">
+    <p class="text-[25px] font-bold text-[#222222] ">Transaction History</p>
+    <button id="viewButton" class="text-[16px] font-medium text-gray-500">View All</button>
+   </div>
+
+
+<div id="cardSeven" class="flex justify-between w-full bg-white shadow-lg transition-all rounded-lg h-[75px] p-[10px] mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Electricity Bill</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  ">
+    <div class="dropdown">
+  <div tabindex="0" role="button" class=""><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 -ml-[200px] shadow-sm leading-7">
+   <li id="Ditels" >Ditels</li>
+   <li id="Delete">Delete</li>
+    
+   
+  </ul>
+</div>
+</button>
+
+</div>
+
+
+<div id="cardEight" class="flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] p-[10px] mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Bank Deposit</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "> <div class="dropdown">
+  <div tabindex="0" role="button" class=""><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 -ml-[200px] shadow-sm leading-7">
+   <li id="Ditelsone" >Ditels</li>
+   <li id="Deleteone">Delete</li>
+    
+   
+  </ul>
+</div>
+</button>
+</div>
+<div id="cardNine" class="flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] p-[10px] mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Mobile Recharge</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "> <div class="dropdown">
+  <div tabindex="0" role="button" class=""><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 -ml-[200px] shadow-sm leading-7">
+   <li id="DitelsTwo" >Ditels</li>
+   <li id="DeleteTwo">Delete</li>
+    
+   
+  </ul>
+</div>
+</button>
+</div>
+
+<div id="cardTen"  class="flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] p-[10px] mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Gas Bill</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "> <div class="dropdown">
+  <div tabindex="0" role="button" class=""><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 -ml-[200px] shadow-sm leading-7">
+   <li id="DitelsThree" >Ditels</li>
+   <li id="DeleteThree">Delete</li>
+    
+   
+  </ul>
+</div>
+</button>
+</div>
+
+
+
+<div id="cardOne" class="  flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] p-[10px] hidden mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Gas Bill</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "> <div class="dropdown">
+  <div tabindex="0" role="button" class=""><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 -ml-[200px] shadow-sm leading-7">
+   <li id="DitelsFour" >Ditels</li>
+   <li id="DeleteFour">Delete</li>
+    
+   
+  </ul>
+</div>
+</button>
+</div>
+
+
+<div id="cardTwo" class="flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] p-[10px] hidden mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Gas Bill</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "> <div class="dropdown">
+  <div tabindex="0" role="button" class=""><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 -ml-[200px] shadow-sm leading-7">
+   <li id="DitelsFive" >Ditels</li>
+   <li id="DeleteFive">Delete</li>
+    
+   
+  </ul>
+</div>
+</button>
+</div>
+
+
+<div id="cardThree" class="flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] p-[10px] hidden mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Gas Bill</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "> <div class="dropdown">
+  <div tabindex="0" role="button" class=""><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 -ml-[200px] shadow-sm leading-7">
+   <li id="DitelsSix" >Ditels</li>
+   <li id="DeleteSix">Delete</li>
+    
+   
+  </ul>
+</div>
+</button>
+</div>
+
+<div id="cardFour" class="flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] hidden p-[10px] mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Gas Bill</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "> <div class="dropdown">
+  <div tabindex="0" role="button" class=""><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 -ml-[200px] shadow-sm leading-7">
+   <li id="DitelsSeven" >Ditels</li>
+   <li id="DeleteSeven">Delete</li>
+    
+   
+  </ul>
+</div>
+</button>
+</div>
+
+
+<div id="cardFive" class="flex justify-between w-full bg-white shadow-lg rounded-lg h-[75px] hidden p-[10px] mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Gas Bill</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "> <div class="dropdown">
+  <div tabindex="0" role="button" class=""><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 -ml-[200px] shadow-sm leading-7">
+   <li id="DitelsEight" >Ditels</li>
+   <li id="DeleteEight">Delete</li>
+    
+   
+  </ul>
+</div>
+</button>
+</div>
+
+<div id="cardSix" class="flex justify-between w-full bg-white shadow-lg rounded-lg hidden h-[75px] p-[10px] mt-6">
+<div class="flex">
+    <div class="w-[50px] h-[50px] bg-gray-200 flex items-center justify-center rounded-full">
+        <img src="img/wallet 1.png" alt="img/wallet 1.png">
+    </div>
+    <div class="">
+        <span class="text-[20px] text-[#222222] font-bold pl-[10px]">Gas Bill</span>
+        <p class="text-[18px] font-medium text-gray-500 pl-[10px]">Today 01:44 AM</p>
+    </div>
+</div>
+
+<button class=" text-gray-500   text-[18px] font-medium  "> <div class="dropdown">
+  <div tabindex="0" role="button" class=""><i class="fa-solid fa-ellipsis-vertical"></i></div>
+  <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 -ml-[200px] shadow-sm leading-7">
+   <li id="DitelsNine" >Ditels</li>
+   <li id="DeleteNine">Delete</li>
+    
+   
+  </ul>
+</div>
+</button>
+</div>
+
+
+<!-- details page starrt -->
+
+
+</div>
+
+<div id="tranjectionpart" class="bg-white w-full mt-[20px] ml-[10px] max-w-sm rounded-3xl shadow-2xl hidden ">
+        
+        <div class="bg-green-500 p-8 text-center text-white">
+            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fa-solid fa-check text-3xl"></i>
+            </div>
+            <h2 class="text-[20px] font-bold">Payment Success</h2>
+            <p class="opacity-80">Your transaction was successful</p>
+        </div>
+
+        <div class="p-6 text-center border-b border-dashed border-gray-200">
+            <p class="text-gray-500 text-[14px] uppercase tracking-widest mb-1">Total Amount</p>
+            <h1 class="text-[36px] font-extrabold text-gray-800">$120.00</h1>
+        </div>
+
+        <div class="p-6 space-y-4">
+            <div class="flex justify-between">
+                <span class="text-gray-400">Transaction ID</span>
+                <span class=" font-bold text-gray-700">#TRX99284710</span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-400">Date & Time</span>
+                <span class="font-medium text-gray-700">30 Jan 2026, 07:15 PM</span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-400">Payment Method</span>
+                <span class=" text-gray-700 font-bold">Credit Card</span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-gray-400">Status</span>
+                <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-[12px] font-bold uppercase">Completed</span>
+            </div>
+            
+            <hr class="border-gray-100 my-4">
+            
+            <div class="flex justify-between items-center">
+                <span class="text-gray-400">Sender</span>
+                <div class="text-right">
+                    <p class="font-bold text-gray-800 text-sm">John Doe</p>
+                    <p class="text-[12px] text-gray-400">john@example.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 pt-0 flex gap-3">
+            <button class="flex bg-gray-100 text-gray-700 px-3 py-3 rounded-xl font-bold hover:bg-gray-200 transition">
+                <i class="fa-solid fa-download mr-2"></i>PDF
+            </button>
+            <button id="backButton" class="flex bg-blue-600 text-white px-3 py-3 rounded-xl font-bold shadow-lg shadow-blue-200 hover:bg-blue-700 transition">
+                Back to Home
+            </button>
+        </div>
+    </div>
+
+<!-- add money resipt start -->
+
+ <div id="addmoneyPart" class= " hidden bg-white w-full max-w-sm rounded-[35px] shadow-2xl p-8 text-center relative ">
+        
+        <div class="mb-6 mt-4 ">
+            <div class="w-24 h-24 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto border-4 border-green-50 shadow-inner">
+                <i class="fa-solid fa-check text-5xl"></i>
+            </div>
+        </div>
+
+        <h1 class="text-[24px] font-black text-gray-800 mb-2">Money Added!</h1>
+        <p class="text-gray-500 text-sm mb-8 px-4">Your money has been successfully added to your wallet.</p>
+
+        <div class="bg-gray-50 rounded-2xl p-5 mb-8 border border-gray-100">
+            <p class="text-[12px] text-gray-400 uppercase  ">Total Amount Added</p>
+            <h2 id="addAmount" class="text-[36px] font-black text-blue-600">$500.00</h2>
+        </div>
+
+        <div class="space-y-4 mb-10 text-left px-2">
+            <div class="flex justify-between items-center text-[14px]">
+                <span class="text-gray-400">Payment Source</span>
+                <span class="font-bold text-gray-700 flex items-center">
+                    <i class="fa-brands fa-cc-visa text-blue-700"></i> **** 4242
+                </span>
+            </div>
+            <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-400">Transaction ID</span>
+                <span class=" text-gray-700 font-bold">#ADD-772910</span>
+            </div>
+            <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-400">New Balance</span>
+                <span id="amountOne" class="font-bold text-green-600">$45000</span>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <button id="chekWallet" class="w-full bg-blue-600 text-white py-4 rounded-2xl font-bold text-lg shadow-lg shadow-blue-200 hover:bg-blue-700 active:scale-95 transition-all">
+                Check Wallet
+            </button>
+            <button id="backButtonone" class="w-full bg-blue-600 text-gray-400 py-2 rounded-xl font-medium text-sm hover:text-white transition-colors">
+                Back to Home
+            </button>
+        </div>
+
+        
+    </div>
+
+<!-- add money resipt start -->
+<!-- add money resipt start -->
+
+
+<div id="cashoutPart" class= " hidden mt-[20px] bg-white w-full max-w-sm rounded-[35px] shadow-2xl p-8 text-center relative ">
+        
+        <div class="mb-6 mt-4 ">
+            <div class="w-24 h-24 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto border-4 border-green-50 shadow-inner">
+                <i class="fa-solid fa-check text-5xl"></i>
+            </div>
+        </div>
+
+        <h1 class="text-[24px] font-black text-gray-800 mb-2">Money Cashout</h1>
+        <p class="text-gray-500 text-sm mb-8 px-4">Your money has been successfully Cashout</p>
+
+        <div class="bg-gray-50 rounded-2xl p-5 mb-8 border border-gray-100">
+            <p class="text-[12px] text-gray-400 uppercase  ">Total Amount Cashout</p>
+            <h2 id="cashoutAmount" class="text-[36px] font-black text-blue-600">$500.00</h2>
+        </div>
+
+        <div class="space-y-4 mb-10 text-left px-2">
+            <div class="flex justify-between items-center text-[14px]">
+                <span class="text-gray-400">Cashout Source</span>
+                <span class="font-bold text-gray-700 flex items-center">
+                    <i class="fa-brands fa-cc-visa text-blue-700"></i> **** 4242
+                </span>
+            </div>
+            <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-400">Transaction ID</span>
+                <span class=" text-gray-700 font-bold">#ADD-772910</span>
+            </div>
+            <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-400">New Balance</span>
+                <span id="cashoutAmountone" class="font-bold text-green-600">$45000</span>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <button id="chekWalletone" class="w-full bg-blue-600 text-white py-4 rounded-2xl font-bold text-lg shadow-lg shadow-blue-200 hover:bg-blue-700 active:scale-95 transition-all">
+                Check Wallet
+            </button>
+            <button id="backButtontwo" class="w-full bg-blue-600 text-gray-400 py-2 rounded-xl font-medium text-sm hover:text-white transition-colors">
+                Back to Home
+            </button>
+        </div>
+
+        
+    </div>
+
+
+
+
+
+<!-- add money resipt start -->
+<!-- transfer resipt start -->
+ <div id="transferPart" class= " hidden mt-[20px] bg-white w-full max-w-sm rounded-[35px] shadow-2xl p-8 text-center relative ">
+        
+        <div class="mb-6 mt-4 ">
+            <div class="w-24 h-24 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto border-4 border-green-50 shadow-inner">
+                <i class="fa-solid fa-check text-5xl"></i>
+            </div>
+        </div>
+
+        <h1 class="text-[24px] font-black text-gray-800 mb-2">Money Transfer</h1>
+        <p class="text-gray-500 text-sm mb-8 px-4">Your money  has been successfully  Trensfer </p>
+
+        <div class="bg-gray-50 rounded-2xl p-5 mb-8 border border-gray-100">
+            <p class="text-[12px] text-gray-400 uppercase  ">Total Amount Transfer</p>
+            <h2 id="transferAmount" class="text-[36px] font-black text-blue-600">$500.00</h2>
+        </div>
+
+        <div class="space-y-4 mb-10 text-left px-2">
+            <div class="flex justify-between items-center text-[14px]">
+                <span class="text-gray-400">Cashout Source</span>
+                <span class="font-bold text-gray-700 flex items-center">
+                    <i class="fa-brands fa-cc-visa text-blue-700"></i> **** 4242
+                </span>
+            </div>
+            <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-400">Transaction ID</span>
+                <span class=" text-gray-700 font-bold">#ADD-772910</span>
+            </div>
+            <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-400">New Balance</span>
+                <span id="transferAmounttwo" class="font-bold text-green-600">$45000</span>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <button id="chekWallettwo" class="w-full bg-blue-600 text-white py-4 rounded-2xl font-bold text-lg shadow-lg shadow-blue-200 hover:bg-blue-700 active:scale-95 transition-all">
+                Check Wallet
+            </button>
+            <button id="backButtontthree" class="w-full bg-blue-600 text-gray-400 py-2 rounded-xl font-medium text-sm hover:text-white transition-colors">
+                Back to Home
+            </button>
+        </div>
+
+        
+    </div>
+<!-- transfer resipt start -->
+
+
+
+
+<!-- paybill resipt start -->
+
+<div id="paybillPart" class= " hidden mt-[20px] bg-white w-full max-w-sm rounded-[35px] shadow-2xl p-8 text-center relative ">
+        
+        <div class="mb-6 mt-4 ">
+            <div class="w-24 h-24 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto border-4 border-green-50 shadow-inner">
+                <i class="fa-solid fa-check text-5xl"></i>
+            </div>
+        </div>
+
+        <h1 class="text-[24px] font-black text-gray-800 mb-2">Pay Bill</h1>
+        <p class="text-gray-500 text-sm mb-8 px-4">Pay Bill has been successfull </p>
+
+        <div class="bg-gray-50 rounded-2xl p-5 mb-8 border border-gray-100">
+            <p class="text-[12px] text-gray-400 uppercase">Pay Bill Amount</p>
+            <h2 id="payAmount" class="text-[36px] font-black text-blue-600">$500.00</h2>
+        </div>
+
+        <div class="space-y-4 mb-10 text-left px-2">
+            <div class="flex justify-between items-center text-[14px]">
+                <span class="text-gray-400">Cashout Source</span>
+                <span class="font-bold text-gray-700 flex items-center">
+                    <i class="fa-brands fa-cc-visa text-blue-700"></i> **** 4242
+                </span>
+            </div>
+            <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-400">Transaction ID</span>
+                <span class=" text-gray-700 font-bold">#ADD-772910</span>
+            </div>
+            <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-400">New Balance</span>
+                <span id="payAmounttwo" class="font-bold text-green-600">$45000</span>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <button id="chekWalletthree" class="w-full bg-blue-600 text-white py-4 rounded-2xl font-bold text-lg shadow-lg shadow-blue-200 hover:bg-blue-700 active:scale-95 transition-all">
+                Check Wallet
+            </button>
+            <button id="backButtonfour" class="w-full bg-blue-600 text-gray-400 py-2 rounded-xl font-medium text-sm hover:text-white transition-colors">
+                Back to Home
+            </button>
+        </div>
+
+        
+    </div>
+
+<!-- paybill resipt start -->
+
+<!-- add money resipt start -->
+
+
+ <div id="walletDiv" class="glass-effect w-80 h-48 rounded-2xl mt-[100px] ml-[43px] bg-blue-700 p-6 text-white  hidden relative  shadow-2xl">
+        <div class="flex justify-between items-start">
+            <div>
+                <p class="text-[14px] opacity-80">Current Balance</p>
+                <h2 id="balanceText" class="text-[30px] font-bold mt-1">$45000</h2>
+                <h2 id="balanceHidden" class="text-[30px] font-bold mt-1 hidden">••••••</h2>
+            </div>
+            <div class="bg-white/20 text-white px-3 py-2.5 rounded-full">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <p class="text-[12px] opacity-70 tracking-widest uppercase">Card Number</p>
+            <p class="text-[18px]font-medium ">**** **** **** 5678</p>
+        </div>
+
+        <button id="toggleBtn" class="absolute bottom-4 right-4 bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg text-[12px] transition-all">
+            Show/Hide
+        </button>
+        <button id="backButtonfive" class="absolute bottom-4 right-27 bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg text-[12px] transition-all">
+            Home
+        </button>
+    </div>
+
+
+
+
+
+ <div id="walletDivtwo" class="glass-effect w-80 h-48 rounded-2xl mt-[100px] ml-[43px] bg-blue-700 p-6 text-white  hidden relative  shadow-2xl">
+        <div class="flex justify-between items-start">
+            <div>
+                <p class="text-[14px] opacity-80">Current Balance</p>
+                <h2 id="balanceTexttwo" class="text-[30px] font-bold mt-1">$45000</h2>
+                <h2 id="balanceHiddentwo" class="text-[30px] font-bold mt-1 hidden">••••••</h2>
+            </div>
+            <div class="bg-white/20 text-white px-3 py-2.5 rounded-full">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <p class="text-[12px] opacity-70 tracking-widest uppercase">Card Number</p>
+            <p class="text-[18px]font-medium ">**** **** **** 5678</p>
+        </div>
+
+        <button id="toggleBtntwo" class="absolute bottom-4 right-4 bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg text-[12px] transition-all">
+            Show/Hide
+        </button>
+        <button id="backButtonSix" class="absolute bottom-4 right-27 bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg text-[12px] transition-all">
+            Home
+        </button>
+    </div>
+
+
+ <div id="walletDivthree" class="glass-effect w-80 h-48 rounded-2xl mt-[100px] ml-[43px] bg-blue-700 p-6 text-white  hidden relative  shadow-2xl">
+        <div class="flex justify-between items-start">
+            <div>
+                <p class="text-[14px] opacity-80">Current Balance</p>
+                <h2 id="balanceTextthree" class="text-[30px] font-bold mt-1">$45000</h2>
+                <h2 id="balanceHiddenthree" class="text-[30px] font-bold mt-1 hidden">••••••</h2>
+            </div>
+            <div class="bg-white/20 text-white px-3 py-2.5 rounded-full">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <p class="text-[12px] opacity-70 tracking-widest uppercase">Card Number</p>
+            <p class="text-[18px]font-medium ">**** **** **** 5678</p>
+        </div>
+
+        <button id="toggleBtnthree" class="absolute bottom-4 right-4 bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg text-[12px] transition-all">
+            Show/Hide
+        </button>
+        <button id="backButtonSeven" class="absolute bottom-4 right-27 bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg text-[12px] transition-all">
+            Home
+        </button>
+    </div>
+ <div id="walletDivfour" class="glass-effect w-80 h-48 rounded-2xl mt-[100px] ml-[43px] bg-blue-700 p-6 text-white  hidden relative  shadow-2xl">
+        <div class="flex justify-between items-start">
+            <div>
+                <p class="text-[14px] opacity-80">Current Balance</p>
+                <h2 id="balanceTextfour" class="text-[30px] font-bold mt-1">$45000</h2>
+                <h2 id="balanceHiddenfour" class="text-[30px] font-bold mt-1 hidden">••••••</h2>
+            </div>
+            <div class="bg-white/20 text-white px-3 py-2.5 rounded-full">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <p class="text-[12px] opacity-70 tracking-widest uppercase">Card Number</p>
+            <p class="text-[18px]font-medium ">**** **** **** 5678</p>
+        </div>
+
+        <button id="toggleBtnfour" class="absolute bottom-4 right-4 bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg text-[12px] transition-all">
+            Show/Hide
+        </button>
+        <button id="backButtonEight" class="absolute bottom-4 right-27 bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg text-[12px] transition-all">
+            Home
+        </button>
+    </div>
+
+
+
+</div>
+
+
+<!-- login secition end -->
+<!-- login secition end -->
+<!-- login secition end -->
+
+
+
+
+
+
+
+
+
+
+</div>
+   
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+   
+   
+
+   
