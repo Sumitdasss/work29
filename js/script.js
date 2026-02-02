@@ -7,7 +7,18 @@ let innputone=document.getElementById("innputone")
 let buttonone=document.getElementById("buttonone")
 let errorone=document.getElementById("errorone")
 let divtwo=document.getElementById("divtwo")
+let showButton=document.getElementById("showButton")
 
+showButton.addEventListener("click",()=>{
+    if(innputone.type=="password"){
+        innputone.type="text"
+        showButton.innerHTML=`<i class="fa-solid fa-eye"></i>`
+    }
+    else{
+                innputone.type="password"
+        showButton.innerHTML=`<i class="fa-solid fa-eye-slash"></i>`
+    }
+})
 
 
 buttonone.addEventListener("click",()=>{
