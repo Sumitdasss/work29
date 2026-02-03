@@ -91,6 +91,7 @@ let backButtonone=document.getElementById("backButtonone")
 let addAmount=document.getElementById("addAmount")
 
 
+
 let chekWallet=document.getElementById("chekWallet")
 let walletDiv=document.getElementById("walletDiv")
 let backButtonfive=document.getElementById("backButtonfive")
@@ -140,6 +141,10 @@ buttonthre.addEventListener("click",()=>{
      
         addMoneydiv.style.display="none"
         
+       let newCard=cardEight.cloneNode(true);
+       newCard.id = "card-" + Date.now(); 
+    newCard.classList.remove("hidden");
+        transactionsDivone.insertBefore(newCard, transactionsDivone.firstChild.nextSibling);
         
     }
 let value= 45000;
@@ -578,6 +583,7 @@ let cardEight=document.getElementById("cardEight")
 let cardNine=document.getElementById("cardNine")
 let cardTen=document.getElementById("cardTen")
 let viewButton=document.getElementById("viewButton")
+let transactionsDivone=document.getElementById("transactionsDivone")
 
 viewButton.addEventListener("click",()=>{
 
