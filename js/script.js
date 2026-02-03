@@ -182,6 +182,8 @@ let chekWalletone=document.getElementById("chekWalletone")
 let balanceTexttwo=document.getElementById("balanceTexttwo")
 let balanceHiddentwo=document.getElementById("balanceHiddentwo")
 let toggleBtntwolet=document.getElementById("toggleBtntwo") 
+let cashouterror=document.getElementById("cashouterror") 
+   let value= 45000;
 
 
 
@@ -200,6 +202,7 @@ cashOutbutton.addEventListener("click",()=>{
          walletDiv.style.display="none"
          walletDivtwo.style.display="none"
          walletDivthree.style.display="none"
+         cashoutPart.style.display="none"
     
 })
 toggleBtntwo.addEventListener('click', () => {
@@ -234,17 +237,26 @@ cashWithdraw.addEventListener("click",()=>{
             errorthree.style.display="none"
         },1500)
     }
+
+
+else if (Number(cashOutinputtwo.value) > 45000) {
+    let needAmount= value - Number(cashOutinputtwo.value);
+    cashouterror.innerText = `Insufficient balance! you need more ${needAmount}`;
+    cashouterror.style.display = "block";
+    setTimeout(() => {
+        cashouterror.style.display = "none";
+    }, 1500);
+}
+
+
     else{
         errorthree.style.display="none"
         cashOutdiv.style.display="none"
         cashoutPart.style.display="block"
+        cashouterror.style.display="none"
   
-        
-        
-    }
-let value= 45000;
-
-if(cashOutinputtwo.value !==""){
+   
+ if(cashOutinputtwo.value !==""){
  
    value - Number(cashOutinputtwo.value);
 
@@ -252,7 +264,12 @@ addMoney.innerText= value - Number(cashOutinputtwo.value);
 cashoutAmountone.innerText= value - Number(cashOutinputtwo.value);
 balanceTexttwo.innerText= value - Number(cashOutinputtwo.value);
 }
-cashoutAmount.innerText=cashOutinputtwo.value;
+cashoutAmount.innerText=cashOutinputtwo.value;  
+
+
+        
+    }
+   
 })
 // cashout div  starrt
 
@@ -276,6 +293,7 @@ tranferButton.addEventListener("click",()=>{
           walletDiv.style.display="none"
           walletDivtwo.style.display="none"
           walletDivthree.style.display="none"
+          
 })
 
 
@@ -296,6 +314,8 @@ let balanceHiddenthree=document.getElementById("balanceHiddenthree")
 let toggleBtnthree=document.getElementById("toggleBtnthree")
 let backButtonSeven=document.getElementById("backButtonSeven")
 let chekWallettwo=document.getElementById("chekWallettwo")
+let tranferError=document.getElementById("tranferError")
+
 toggleBtnthree.addEventListener("click",()=>{
     balanceTextthree.classList.toggle("hidden")
 balanceHiddenthree.classList.toggle("hidden")
@@ -327,16 +347,23 @@ sendButton.addEventListener("click",()=>{
             errorfour.style.display="none"
         },1500)
     }
+else if (Number(tranferInputtwo.value) > 45000) {
+    let needAmountone= value - Number(tranferInputtwo.value);
+    tranferError.innerText = `Insufficient balance! you need more ${needAmountone}`;
+    tranferError.style.display = "block";
+    setTimeout(() => {
+        tranferError.style.display = "none";
+    }, 1500);
+}
+
+
     else{
         errorfour.style.display="none"
 transferPart.style.display="block"
 
 tranferDiv.style.display="none"
        
-        
-        
-    }
-let value= 45000;
+   let value= 45000;
 
 if(tranferInputtwo.value !==""){
  
@@ -346,7 +373,10 @@ addMoney.innerText= value - Number(tranferInputtwo.value);
 transferAmounttwo.innerText= value - Number(tranferInputtwo.value);
 balanceTextthree.innerText= value - Number(tranferInputtwo.value);
 }
-transferAmount.innerText=tranferInputtwo.value
+transferAmount.innerText=tranferInputtwo.value     
+        
+    }
+
 })
 // transfer div  starrt
 
@@ -443,6 +473,7 @@ let balanceHiddenfour=document.getElementById("balanceHiddenfour")
 let toggleBtnfour=document.getElementById("toggleBtnfour")
 let backButtonEightlet =document.getElementById("backButtonEight")
 let chekWalletthree =document.getElementById("chekWalletthree")
+let payerroe =document.getElementById("payerroe")
 
 
 toggleBtnfour.addEventListener("click",()=>{
@@ -475,6 +506,16 @@ paybuttonone.addEventListener("click",()=>{
             errorsix.style.display="none"
         },1500)
     }
+
+else if (Number(payInputtwo.value) > 45000) {
+    let needAmountthree= value - Number(payInputtwo.value);
+    payerroe.innerText = `Insufficient balance! you need more ${needAmountthree}`;
+    payerroe.style.display = "block";
+    setTimeout(() => {
+        payerroe.style.display = "none";
+    }, 1500);
+}
+    
     else{
         errorsix.style.display="none"
         paybillPart.style.display="block"
@@ -482,10 +523,7 @@ paybuttonone.addEventListener("click",()=>{
         payBildiv.style.display="none"
 
        
-        
-        
-    }
-let value= 45000;
+        let value= 45000;
 
 if(payInputtwo.value !==""){
  
@@ -496,6 +534,9 @@ payAmounttwo.innerText= value - Number(payInputtwo.value);
 balanceTextfour.innerText= value - Number(payInputtwo.value);
 }
 payAmount.innerText=payInputtwo.value;
+        
+    }
+
 })
 
 //  paybil div start 
